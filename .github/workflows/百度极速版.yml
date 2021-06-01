@@ -3,7 +3,7 @@ name: 百度极速版
 on:
   workflow_dispatch:
   schedule:
-     - cron: '4,34 0-12 * * *'
+     - cron: '0,35 0-15 * * *'
   watch:
     types: started
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行【百度极速版】'
+      - name: '运行 【百度极速版】'
         if: env.BAIDU_COOKIE
         run: |
           node Task/baidu_speed.js
