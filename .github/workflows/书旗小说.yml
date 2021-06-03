@@ -21,7 +21,10 @@ jobs:
           node-version: 12.x
       - name: npm install
         run: |
-          npm install
+         cd ～/Scripts
+         git checkout main
+         npm install
       - name: '运行【书旗小说】'     
         run: |
+          cd ～/Scripts
           node Task/shuqi.js
