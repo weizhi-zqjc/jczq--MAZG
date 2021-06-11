@@ -23,3 +23,5 @@ jobs:
       - name: '运行【京东排行榜】'     
         run: |
           node JD/jd_lotteryMachine.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
