@@ -1,4 +1,4 @@
-name: 京东排行榜
+name: 京东抽奖机
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行【京东排行榜】'     
+      - name: '运行【京东抽奖机】'     
         run: |
           node JD/jd_lotteryMachine.js
         env:
