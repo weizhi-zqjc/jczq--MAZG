@@ -22,6 +22,6 @@ jobs:
           npm install
       - name: '运行【某东排行榜】'     
         run: |
-          node JD/jd_rankingList.js
+          node yangtingxiao/jd_rankingList.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
