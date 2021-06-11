@@ -22,6 +22,6 @@ jobs:
           npm install
       - name: '运行【某东抽奖机】'     
         run: |
-          node JD/jd_lotteryMachine.js
+          node yangtingxiao/jd_lotteryMachine.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
