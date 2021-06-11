@@ -1,4 +1,4 @@
-name: 某东抽奖机
+name: 「某东」抽奖机
 
 on:
   workflow_dispatch:
