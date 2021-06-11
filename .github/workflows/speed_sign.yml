@@ -1,4 +1,4 @@
-name: 某东极速版签到
+name: 『某东』极速版签到
 
 on:
   workflow_dispatch:
