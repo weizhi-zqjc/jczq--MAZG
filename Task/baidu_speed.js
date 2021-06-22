@@ -19,7 +19,7 @@ let shower = $.getdata('on_baidu')||"true";
 
 let taskON = $.getdata(`task_baidu`)||"true"//除提现和兑换外其他任务开关;
 let isblack = "false";
-let UA = $.getdata('bd_Agent')||'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.24.0 matrixstyle/0 light%2F1.0%28WKWebView%29%20themeUA%3DTheme%2Fdefault matrixstyle/0 info baiduboxapp/5.4.0.10 (Baidu; P2 14.4.2)';
+let UA = $.getdata('bd_Agent')||'Mozilla/5.0 (iPhone; CPU iPhone OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 SP-engine/2.24.0 matrixstyle/0 matrixstyle/0 info baiduboxapp/5.5.0.10 (Baidu; P2 14.4.2)';
 
 if (isGetCookie = typeof $request !== 'undefined') {
     GetCookie();
