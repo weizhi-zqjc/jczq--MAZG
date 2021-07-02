@@ -3,7 +3,7 @@ name: 书旗小说
 on:
   workflow_dispatch:
   schedule:
-     - cron: '2 * * * *'
+     - cron: '2,32 0-11 * * *'
   watch:
     types: started
 jobs:
