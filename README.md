@@ -3,4 +3,5 @@
 * 但请你把Task/目录下所有xxCOOKIE.js删除
 * 但请你把Task/目录下所有xxCOOKIE.js删除
 * 但请你把Task/目录下所有xxCOOKIE.js删除
-    * 做个有素质的人
+    * 因为里面是我的COOKIE，你要来没用
+    * 请你做个有素质的人
