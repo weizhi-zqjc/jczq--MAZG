@@ -22,6 +22,6 @@ jobs:
           npm install
       - name: '运行【某东极速版签到】'     
         run: |
-          node Node/speed_sign.js
+          node z/speed_sign.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
