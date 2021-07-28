@@ -10,8 +10,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-        DSJ_dsjHEADER: ${{ secrets.DSJ_dsjHEADER }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,3 +23,5 @@ jobs:
       - name: '运行【电视家】'     
         run: |
           node Task/dsj.js
+        env:
+        DSJ_dsjHEADER: ${{ secrets.DSJ_dsjHEADER }}
