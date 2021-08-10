@@ -23,3 +23,5 @@ jobs:
       - name: '运行【电视家】'     
         run: |
           node Task/dsj.js
+        env:
+          DSJ_dsjHEADER: ${{ secrets.DSJ_dsjHEADER }}
