@@ -3,7 +3,7 @@ name: 「某东」抽奖机
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 16 * * *'
+     - cron: '3 17 * * *'
   watch:
     types: started
 jobs:
