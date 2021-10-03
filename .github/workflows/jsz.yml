@@ -3,7 +3,7 @@ name: jsz
 on:
   workflow_dispatch:
   schedule:
-     - cron: '4 1 1 1 1'
+     - cron: '0 0,3,6,9 * * *'
   watch:
     types: started
 jobs:
