@@ -1,2 +1,1 @@
-# 访问量
-![](http://profile-counter.glitch.me/Lxg6/count.svg)
+# 佛系且随缘
