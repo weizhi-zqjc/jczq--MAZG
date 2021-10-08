@@ -34,31 +34,6 @@ async function all() {
   $.log("【中青3提现】");
   await YouthWithdraw();
 
-
-  $.log("【机场签到】");
-
-  encrypted = "da6030b09dec3f19f4290f2f85e2ef4a36d59ac83b18bd506f4e17d173e63a087bca2c989ffe41160a0d694836cadd5aea47401b0270997d860464e6b77938f3";
-  key = process.env.ENCRYPT_KEY;
-  body = aesDecrypt(encrypted, key);
-
-  encrypted = "0721e95e0b7305f6f925a7bd219325136edb73b13bfaae8fb0a090aeb01e9b2c";
-  url1 = aesDecrypt(encrypted, key);
-
-  encrypted = "0721e95e0b7305f6f925a7bd219325131dfb41f4134f19efe1ae0356f344019f";
-  url2 = aesDecrypt(encrypted, key);
-
-  encrypted = "0721e95e0b7305f6f925a7bd2193251397978a9e37c0e29646d56d25890b08c7ff8e3193cfe5874dd849506254eb2a70";
-  url3 = aesDecrypt(encrypted, key);
-
-  cookie = await login();
-  if (cookie != 0) {
-    $.log("正在签到...");
-    await checkin();
-    await traquery();
-  }
-
-
-
 }
 
 
