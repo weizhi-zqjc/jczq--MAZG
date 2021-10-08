@@ -21,7 +21,7 @@ const crypto = require('crypto');
 async function all() {
 
   $.log("【九章头条提现】");
-  let TokenArr = ['BlACJttnBfpQ8JBFUrHC4rCihR3AQf5h','RnNMs4AZuYbZbDiONjOqJmjoJFkMqYAW'];
+  let TokenArr = ['lYj5N1IgwRVkrQ6Wneiztc9CPkSeUAo2', 'BXpKAZrCgX8vIx_XFYrwQjziaX2eRxJv','g9szPKNsn7r17kq9lmWMa1YWvz3lvums','sP7fthKGM28pfyvjX2NeZGuxFqThWOA7','3Cga15GWdE6MGe3u5l1hayika-IRmbBL'];
 
   for (let i = 0; i < TokenArr.length; i++) {
     $.log(`开始执行第${i + 1}个账号`);
@@ -34,6 +34,9 @@ async function all() {
 
 
 
+
+
+
 }
 
 
@@ -42,17 +45,17 @@ function taskget() {
        const url = "http://user.gaoqingdianshi.com/api/v3/user/info";
        const headers = {
   "Accept-Encoding": "gzip, deflate",
-  "AppVerCode": "236",
-  "userid": "62d5897fae73120cda6cae02e53f6739",
+  "AppVerCode": "243",
+  "userid": "19eb5221505317c98b8e1e99b80087d9",
   "language": "zh_CN",
   "Host": "user.gaoqingdianshi.com",
-  "AppVerName": "1.96",
-  "hwModel": "iPhone11,2",
+  "AppVerName": "1.98",
+  "hwModel": "iPhone7",
   "hwBrand": "iPhone",
-  "countryCode": "CN",
-  "ssid": "f051e12e-b7d5-4381-84e8-e28c4f2ff5a9",
+  "countryCode": "",
+  "ssid": "",
   "Connection": "close",
-  "uuid": "b963e558667e44ea908663230a232e82",
+  "uuid": "f2da8cd4ddad45f7a8654b9a0333bf8e",
   "Cache-Control": "no-cache",
   "ispId": "",
   "Accept-Language": "zh-Hans;q=1",
@@ -61,15 +64,15 @@ function taskget() {
   "hwMac": "",
   "Generation": "com.dianshijia.mobile.ios",
   "Accept": "*/*",
-  "Authorization": "T1RWaE56VTJZelk1TnpneU16QXhNMkprWkRNMllXUm1ZekE0Tm1GbU4yRT18MTYzMDk5MDgxMzc4MTA0MzA1OHw0MjMxMDkyMmFmZDVjYjFlZjM2YjkzODMzYmM4MzZiZDM2N2U3NmNi",
+  "Authorization": "TURjMU1URmpaVFpsTXpsbVpUQTRPVFZtTnpRM1ptSTNOR0k1WldFNE5EUT18MTYzMzU4MzIzNTk3NDU3NzU3OHwzODY1ZGZkN2YxMzZlZGY1YTIyNmI3MDM2OGY5NDhhN2E4ZWQ2Mjk1",
   "appId": "19227f89ea1a166451593601eb8a1b4f",
-  "cityCode": "420100",
+  "cityCode": "430100",
   "erid": "93363",
   "routerMac": "f88c215fb96d",
   "ethMac": "",
-  "areaCode": "420000",
-  "cuuid": "adcda99dee6aa9d7981c962071150ba9",
-  "gpsCityCode": "420100"
+  "areaCode": "430000",
+  "cuuid": "d7022995b32e9fae4f01fa62afc2e678",
+  "gpsCityCode": ""
 };
       const request = {
           url: url,
@@ -145,16 +148,7 @@ function CashAD() {
     })
   })
 }
-function YouthWithdraw() {
-  return new Promise((resolve, reject) => {
-    const url = "https://ios.baertt.com/v5/wechat/withdraw2.json";
-    const headers = {};
-    const body = "p=9NwGV8Ov71o%3DnXy4DSepUrpNij1znriwLz5F0xxoMfi_RJhf9fnYS9ABFPJMOM7jEx17_kYTNFAQDTA49cgTFsNZgF7AFE8jBxQebg2oGNXJXdhtbydx6aGWryTes-AMT1VJT5fEQHzrx6SAZ_nUMDu_xjD5MFyUyh9o-uttQZUQDeUDUG2YjNLrAANQd-3v-gToRHhbFxMgU8_UObscA5rYMX4jbiVS7VtjO_dB7fEjYS80yG1JqAB21VTqvwo2T13H6vePX0XK5T5HWboq5opcbwUcyDuOd7ZZLihn44NvW3cnJ_OAIJx-XWiCo4uNXQIheUDvWzBM_EO5jP6y90KDIOS_si11mVFy4H26xjHn2oLmW_70L3-9v4aLbu0MBN24UIS1aY_T2UhVCKRzrJT8H9jHB-BJIBC3L8X3rQNzAj2fYqXx03cMzfY7Zh4t0nnczPKJs5FvOmfpgN5kk8DK5MXfTQTC27YfvuehFTc_m8Ojx4mDocmc7rf0unPWWh3EIw_C0SK3pnhjPWlh8Bh49u916f606XVZaZBAfiv0MD4ACBoxQ7kBmaVS7fFFNJtMNjf0E8cj5-81xA_JMa-WMmQwMOSEDC_6_YN_O7x-RStrPsFhzkSc4tAZvcuAEbWInp4BAX29tqbGeO2meZVVr4qe19R3EDBTl9tAUqAsvCb8t_fnfRrxv-JjwVdJWpmJEEdIFul6sQK_jo05VwT1yKyb89z2VljcnmENlHh-2H2T0pPNGXqWZ_WMKSJkHfrzOPKIl76_3KBjioZnPW-fEidpwPeFrEGSQNeNpi2Cjct7gqy_V8PjHIdhxuqxzZS-s92XLOzy0qFmNk1s7xpxsCXP0pJ4Bw%3D%3D";
-    const request = {
-      url: url,
-      headers: headers,
-      body: body
-    };
+
 
     $.post(request, async (error, response, data) => {
       try {
@@ -223,15 +217,7 @@ function traquery() {
       timeout: 60000,
     };
 
-    $.get(request, function (error, response, data) {
-      try {
-        $.log("今日已用流量" + JSON.parse(data).data.now + "，剩余流量" + JSON.parse(data).data.over + "，总共使用流量" + JSON.parse(data).data.old);
-      } catch (e) {
-        $.log(e)
-      }
-      resolve();
-    });
-  });
+
 }
 
 
