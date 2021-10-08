@@ -26,6 +26,5 @@ jobs:
         run: |
           cd ~/js/Task
           node checkin.js
-          node cx.js
         env:
           ENCRYPT_KEY: ${{ secrets.ENCRYPT_KEY }}
