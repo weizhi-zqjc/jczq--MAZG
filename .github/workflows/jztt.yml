@@ -1,4 +1,4 @@
-name: 九章头条
+name: 九yjt
 
 on:
   workflow_dispatch:
