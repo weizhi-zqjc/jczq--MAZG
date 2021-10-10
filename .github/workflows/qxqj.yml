@@ -3,7 +3,7 @@ name: qxqljk
 on:
   workflow_dispatch:
   schedule:
-     - cron: '3 0-14 * * *'
+     - cron: '3 2-8 * * *'
   watch:
     types: started
 jobs:
@@ -20,8 +20,8 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行【电视家】'     
+      - name: '运行【qxq】'     
         run: |
-          node Task/dsj.js
+          node Task/qxq.js
         env:
-          DSJ_dsjHEADER: ${{ secrets.DSJ_dsjHEADER }}
+          DSJ_dsjHEADER: ${{ secrets.qxqhd }}
