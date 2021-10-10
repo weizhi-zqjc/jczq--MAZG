@@ -11,7 +11,7 @@
 获取数据： 进入软件，点击赚钱，下拉刷新获取数据
 TG通知群:https://t.me/tom_ww
 TG电报交流群: https://t.me/tom_210120
-boxjs地址 :
+boxjs地址 :  
 https://raw.githubusercontent.com/YaphetS0903/JStest/main/YaphteS0903.boxjs.json
 
 趣星球
@@ -100,30 +100,17 @@ let qxqhds = ""
             }
         }
        }else {
-         if (!qxqhd) {
-              $.msg($.name, '【提示】没有cookie，获取cookie，再跑一次脚本', '不知道说啥好', {
-                  "open-url": "给您劈个叉吧"
-              });
-              $.done()
-          }
-          else if (qxqhd.indexOf("@") == -1 && qxqhd.indexOf("@") == -1) {
-                     qxqhdArr.push(qxqhd)
-          }
-          else if (qxqhd.indexOf("@") > -1) {
-                     qxqhds = qxqhd.split("@")
-          }
-          else if (process.env.qxqhd && process.env.qxqhd.indexOf('@') > -1) {
-                     qxqhdArr = process.env.qxqhd.split('@');
-                     console.log(`您用"@"隔开\n`)
-          }
-          else {
-                     qxqhds = [process.env.qxqhd]
-          };
-             Object.keys(qxqhds).forEach((item) => {
-                 if (qxqhds[item]) {
-                     qxqhdArr.push(qxqhds[item])
-                 }
-             })
+        if (process.env.qxqhd && process.env.qxqhd.indexOf('@') > -1) {
+            qxqhdArr = process.env.qxqhd.split('@');
+          console.log(`您选择的是用"@"隔开\n`)
+      } else {
+        qxqhds = [process.env.qxqhd]
+      };
+      Object.keys(qxqhds).forEach((item) => {
+      if (qxqhds[item]) {
+        qxqhdArr.push(qxqhds[item])
+      }
+  })
         console.log(`共${qxqhdArr.length}个cookie`)
           for (let k = 0; k < qxqhdArr.length; k++) {
               $.message = ""
@@ -1574,3 +1561,4 @@ function Env(name, opts) {
         }
     })(name, opts)
 }
+
