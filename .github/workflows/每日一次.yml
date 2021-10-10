@@ -1,4 +1,4 @@
-name: 每日一次
+name: 每yk11
 on:
   workflow_dispatch:
   schedule:
