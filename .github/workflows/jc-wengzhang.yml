@@ -1,0 +1,32 @@
+name: jc-wengzhang2
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 1-14/6 * * *'
+  watch:
+    types: started
+  repository_dispatch:
+    types: bean_change
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: npm install
+        run: |
+          npm install
+      - name: '运行 【jc-wengzhang2】'
+        run: |
+
+          node jc-wengzhang2.js
+
+      - name: '运行 【jc-wengzhang2-1】'
+        run: |
+
+          node jc-wengzhang2-1.js
