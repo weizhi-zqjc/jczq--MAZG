@@ -1,22 +1,22 @@
 {
-  "name": "Sunert",
+  "name": "Staitri1906",
   "version": "1.0.0",
   "description": "",
-  "main": "jingxi.js",
+  "main": "AlipayManor.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sunert/Scripts.git"
+    "url": "git+https://github.com/Staitri1906/YoTo-9.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sunert/Scripts/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Sunert/Scripts#readme",
+  "homepage": "",
   "dependencies": {
     "crypto-js": "^4.0.0",
     "got": "^11.7.0",
