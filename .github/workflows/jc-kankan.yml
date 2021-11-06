@@ -1,4 +1,4 @@
-name: jc-kankan
+name: jc-kankan 
 on:
   workflow_dispatch:
   schedule:
