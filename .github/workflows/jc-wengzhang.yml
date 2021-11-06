@@ -1,4 +1,4 @@
-name: jc-wengzhang2
+name: jc-wengzhang2 
 on:
   workflow_dispatch:
   schedule:
